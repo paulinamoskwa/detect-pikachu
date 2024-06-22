@@ -147,7 +147,7 @@
 - Lastly, always in the Pikachu object `Inspector` > `Add Component` > `Rotation Randomizer Tag` (which is already present in the above image).
 - Now, pressing the play button, the data generation will begin.
 <p align="center" width="100%">
-<img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/caea97f1-04f4-4c0b-87b9-84ac1aa0dd7c" style="width: 80%">
+<img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/78856b5d-8e81-42e6-b195-664e5bd7b220" style="width: 80%">
 </p>
 
 - To find where the images are being saved: `Edit` > `Project Settings` > `Perception` > `Solo Endpoint` > `Base Path` is the folder where the outputs are collected. (`Show Folder`) to check.
