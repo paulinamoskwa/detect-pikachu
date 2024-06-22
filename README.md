@@ -179,6 +179,94 @@ The overall pipeline looks as follows.
 
 - To find where the images are being saved: `Edit` > `Project Settings` > `Perception` > `Solo Endpoint` > `Base Path` is the folder where the outputs are collected. (`Show Folder`) to check.
 
+## Part 3 - Train YOLO Model and use it in Real Time
+- It is convenient to repeat the synthetic data generation process with multiple position of the object in the frame. In this case, repeat the generation with 4 different position-size combination. 
+<p align="center" width="100%">
+<img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/bd6e1cbf-13ee-49b1-a1ec-c05d78e7c819" style="width: 60%">
+</p>
+
+- For each data generation (4) we have now a folder of sequences. The decision of generating sequences rather than single frames is because the first shot is blurry; the Perception package is so fast in making screenshots that the object movement cannot follow. The structure of the Unity outputs is as follows. 
+```
+data
+ |
+ └── pika1
+ |    |
+ |    └── annotation_definitions.json
+ |    └── metadata.json
+ |    └── metric_definition.json
+ |    └── sensor_definitions.json
+ |    └── sequence.0
+ |    └── sequence.1
+ |    └── ..
+ |    └── sequence.2
+ |    |    |
+ |    |    └── step0.camera.png
+ |    |    └── step0.camera.semantic.segmentation.png
+ |    |    └── step0.frame_data.json
+ |    |    └── ..
+ |    |    └── step4.camera.png
+ |    |    └── step4.camera.semantic.segmentation.png
+ |    |    └── step4.frame_data.json
+ |    |
+ |    └── ..
+ |    └── sequence.110
+ |
+ └── pika2
+ └── pika3
+ └── pika4
+```
+
+- From each sequence extract the last frame, the 5-th. Together with the frame, we collect the data from the corresponding `.json` annotation and we save it in the YOLOv8 format, namely `<class_id> <x_center> <y_center> <width> <height>`. The script that does that is `extract_frame_and_data.py`.
+- Navigate to the output of the script and create a new file, `data.yaml`, with the following content. This is needed during the training of the YOLOv8 model.
+```
+train: ../images
+val: ../images
+
+nc: 1
+names: ['Pikachu']
+```
+
+- The folder has to have the following format.
+```
+dataset
+ |
+ └── data.yaml
+ |
+ └── images
+ |    |
+ |    └── v1__1.png
+ |    └── ..
+ |    └── v1__100.png
+ |    └── v2__1.png
+ |    └── ..
+ |    └── v2__100.png
+ |    └── v3__1.png
+ |    └── ..
+ |    └── v3__100.png
+ |    └── v4__1.png
+ |    └── ..
+ |    └── v4__100.png
+ |
+ └── labels
+      |
+      └── v1__1.txt
+      └── ..
+      └── v1__100.txt
+      └── v2__1.txt
+      └── ..
+      └── v2__100.txt
+      └── v3__1.txt
+      └── ..
+      └── v3__100.txt
+      └── v4__1.txt
+      └── ..
+      └── v4__100.txt
+```
+
+- Zip the folder and load it on Colab.
+- Move to Colab > Use the notebook `code/train_yolov8_model.ipynb` to train a YOLOv8 model.
+- Save `/content/runs/detect/train/weights/best.pt` locally.
+- To run the model, connect a webcam and run `run_realtime_pikachu_detection.py`.
 
 
 
