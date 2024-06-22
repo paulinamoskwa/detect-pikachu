@@ -3,7 +3,7 @@
 <br>
 
 <p align="center" width="100%">
-  <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/920a3889-83a9-456b-9865-f116cf44d986" style="width: 50%; display: block; margin: auto;"></a><br>
+  <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/557f80b9-eee0-4d4d-be7e-9517f228a540" style="width: 50%; display: block; margin: auto;"></a><br>
   Fine-tune a YOLOv8 model to detect Pikachu without worrying about the training data.
 </p>
 
@@ -20,24 +20,27 @@
 
 <br>
 
+# About
+
 The main problem when training a detection model, or generally when dealing with machine learning models, is the data. The goal of this project is to train an object detection model (YOLOv8) without manually creating every training image and annotation. Instead, we create a 3D model of the object and we exploit Unity Perception package to automatically generate several images and annotations.
 
 The overall pipeline looks as follows.
-
 <p align="center" width="100%">
 <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/4a8b6a39-3ff6-4c6b-8037-76d78f5fee8a" style="width: 100%">
 </p>
 
-- First, we use MagiScan 3D to make the 3D model of Pikachu. This model is in a row format and needs some cleaning.
-- The row 3D Pikachu model is post-processed in Blender, where we delete the support and other small noises.
-- We export the 3D model and its texture, and we move it to Unity, where we set up a Perception project.
-- We generate the detection data. Afterwards, we modify the generated coordinates to match the YOLOv8 format.
-- Finally, we can now train the YOLOv8 model solely with synthetic data.
+- Use MagiScan 3D to make the 3D model of Pikachu. This model is in a raw format and needs some cleaning.
+- The raw 3D Pikachu model is post-processed in Blender, where the support and other small noises are deleted.
+- Export the 3D model and its texture, and move it to Unity, where a Perception project needs to be set up.
+- Generate the detection data. Afterwards, modify the generated coordinates to match the YOLOv8 format.
+- Finally, train the YOLOv8 model solely with synthetic data.
+
+<br>
 
 <br>
 
 <p align="center" width="100%">
-<img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/c2f2887c-1502-4649-abc2-ca48e01d847a" style="width: 100%">
+<img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/87953e10-a612-4071-9d68-ea2d6b348bd9" style="width: 100%">
 </p>
 
 ## Part 1 - MagiScan 3D and Blender to Create the Pikachu Model
