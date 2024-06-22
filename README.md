@@ -4,8 +4,13 @@
 
 <p align="center" width="100%">
   <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/557f80b9-eee0-4d4d-be7e-9517f228a540" style="width: 50%; display: block; margin: auto;"></a><br>
-  Fine-tune a YOLOv8 model to detect Pikachu without worrying about the training data.
+  Fine-tune a YOLOv8 model to detect Pikachu without worrying about the training data.<br>
+  <i>3D Pikachu modeling, synthetic data generation with Unity Perception.<br>YOLOv8 fine-tuning exclusively on synthetic data.</i><br>
 </p>
+
+<br>
+
+<br>
 
 <p align="center">
   <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/bcad884c-8bf1-4ba8-842e-0d828449c5df" width="49.5%"/> 
@@ -24,7 +29,7 @@ The overall pipeline looks as follows.
 </p>
 
 - Use MagiScan 3D to make the 3D model of Pikachu. This model is in a raw format and needs some cleaning.
-- The raw 3D Pikachu model is post-processed in Blender, where the support and other small noises are deleted.
+- The raw 3D Pikachu model is post-processed in Blender, where small noises are deleted.
 - Export the 3D model and its texture, and move it to Unity, where a Perception project needs to be set up.
 - Generate the detection data. Afterwards, modify the generated coordinates to match the YOLOv8 format.
 - Finally, train the YOLOv8 model solely with synthetic data.
