@@ -2,7 +2,14 @@
 
 <p align="center" width="100%">
   <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/920a3889-83a9-456b-9865-f116cf44d986" style="width: 60%; display: block; margin: auto;"></a><br>
-  3D Pikachu modeling, synthetic data generation with Unity Perception.<br>YOLOv8 fine-tuning exclusively on synthetic data.<br>
+  Fine-tune a YOLOv8 model to detect Pikachu without worrying about the training data.
+</p>
+
+<br>
+
+<p align="center">
+  <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/bcad884c-8bf1-4ba8-842e-0d828449c5df" width="49.5%"/> 
+  <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/d6be350e-6db9-4bf2-b1a8-01a163912318" width="49.5%"/> 
 </p>
 
 
