@@ -16,6 +16,9 @@
 
 .
 
+<p align="center" width="100%">
+<img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/c2f2887c-1502-4649-abc2-ca48e01d847a" style="width: 100%">
+</p>
 
 ## Part 1 - MagiScan 3D and Blender to Create the Pikachu Model
 
