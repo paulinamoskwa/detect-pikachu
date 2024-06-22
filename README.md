@@ -16,16 +16,25 @@
   <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/d6be350e-6db9-4bf2-b1a8-01a163912318" width="49.5%"/> 
 </p>
 
+<br>
 
-.
+<br>
 
-.
+The main problem when training a detection model, or generally when dealing with machine learning models, is the data. The goal of this project is to train an object detection model (YOLOv8) without manually creating every training image and annotation. Instead, we create a 3D model of the object and we exploit Unity Perception package to automatically generate several images and annotations.
 
-.
+The overall pipeline looks as follows.
 
-.
+<p align="center" width="100%">
+<img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/4a8b6a39-3ff6-4c6b-8037-76d78f5fee8a" style="width: 100%">
+</p>
 
-.
+- First, we use MagiScan 3D to make the 3D model of Pikachu. This model is in a row format and needs some cleaning.
+- The row 3D Pikachu model is post-processed in Blender, where we delete the support and other small noises.
+- We export the 3D model and its texture, and we move it to Unity, where we set up a Perception project.
+- We generate the detection data. Afterwards, we modify the generated coordinates to match the YOLOv8 format.
+- Finally, we can now train the YOLOv8 model solely with synthetic data.
+
+<br>
 
 <p align="center" width="100%">
 <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/c2f2887c-1502-4649-abc2-ca48e01d847a" style="width: 100%">
