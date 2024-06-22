@@ -75,8 +75,6 @@ The overall pipeline looks as follows.
 <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/4d96d068-bd16-4c19-8211-a5ff48781424" style="width: 60%">
 </p>
 
-<br>
-
 ## Part 2 - Unity Perception for Synthetic Data Generation
 
 - Download Unity Hub and Unity `2022.3.21f1 Silicon`.
