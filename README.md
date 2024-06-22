@@ -1,13 +1,9 @@
 <br>
 
-<br>
-
 <p align="center" width="100%">
   <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/7aa24fc2-3598-474f-bfae-fe6a3452d193" style="width: 50%; display: block; margin: auto;"></a><br>
   Fine-tune a YOLOv8 model to detect Pikachu without worrying about the training data.<br>
 </p>
-
-<br>
 
 <br>
 
@@ -19,8 +15,6 @@
   <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/d6be350e-6db9-4bf2-b1a8-01a163912318" width="49.5%"/><br>
   <i>YOLOv8 fine-tuning exclusively on synthetic data.</i>
 </p>
-
-<br>
 
 # About
 
@@ -46,6 +40,4 @@ The overall pipeline looks as follows.
     <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/87953e10-a612-4071-9d68-ea2d6b348bd9" style="width: 100%">
   </a>
 </p>
-
-<br>
 
