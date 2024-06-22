@@ -13,7 +13,7 @@
 <br>
 
 <p align="center">
-  <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/0faefcc8-fb57-4c0f-851d-5974c48910ea" width="49.5%"/> 
+  <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/756655b5-6776-426b-91f0-59150fed9812" width="49.5%"/> 
   <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/c347982a-7d30-4bfe-98e8-9006033f1b12" width="49.5%"/><br>
   <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/bcad884c-8bf1-4ba8-842e-0d828449c5df" width="49.5%"/> 
   <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/d6be350e-6db9-4bf2-b1a8-01a163912318" width="49.5%"/> 
