@@ -37,7 +37,8 @@ The overall pipeline looks as follows.
 
 <p align="center" width="100%">
   <a href="https://github.com/paulinamoskwa/detect-pikachu/tree/main/tutorial.md">
-    <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/87953e10-a612-4071-9d68-ea2d6b348bd9" style="width: 100%">
+    <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/3d75596b-c157-4e46-92c9-aa5dd919f376" style="width: 100%">
   </a>
 </p>
+
 
