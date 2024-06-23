@@ -18,7 +18,7 @@
 
 # About
 
-The main problem when training a detection model, or generally when dealing with machine learning models, is the data. The goal of this project is to train an object detection model (YOLOv8) without manually creating every training image and annotation. Instead, we create a 3D model of the object and we exploit Unity Perception package to automatically generate several images and annotations.
+The main problem when training a detection model, or generally when dealing with machine learning models, is the data. The goal of this project is to train an object detection model (YOLOv8) without manually creating every training image and annotation. Instead, we create a 3D model of the object and we exploit the Unity Perception package to automatically generate several images and annotations.
 
 The overall pipeline looks as follows.
 <p align="center" width="100%">
