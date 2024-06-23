@@ -130,7 +130,7 @@
 </p>
 
 - Lastly, always in the Pikachu object `Inspector` > `Add Component` > `Rotation Randomizer Tag` (which is already present in the above image).
-- Now, pressing the play button, the data generation will begin.
+- Now, by pressing the play button the data generation will begin.
 <p align="center" width="100%">
 <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/78856b5d-8e81-42e6-b195-664e5bd7b220" style="width: 80%">
 </p>
@@ -174,7 +174,7 @@ data
  └── pika4
 ```
 
-- From each sequence extract the last frame, the 5-th. Together with the frame, we collect the data from the corresponding `.json` annotation and we save it in the YOLOv8 format, namely `<class_id> <x_center> <y_center> <width> <height>`. The script that does that is `extract_frame_and_data.py`.
+- From each sequence extract the last frame, the 5-th. Together with the frame, we collect the data from the corresponding `.json` annotation and we save it in the YOLOv8 format, namely `<class_id> <x_center> <y_center> <width> <height>`. The script that does that is `code/extract_frame_and_data.py`.
 - Navigate to the output of the script and create a new file, `data.yaml`, with the following content. This is needed during the training of the YOLOv8 model.
 ```
 train: ../images
@@ -224,7 +224,7 @@ dataset
 - Zip the folder and load it on Colab.
 - Move to Colab > Use the notebook `code/train_yolov8_model.ipynb` to train a YOLOv8 model.
 - Save `/content/runs/detect/train/weights/best.pt` locally.
-- To run the model, connect a webcam and run `run_realtime_pikachu_detection.py`.
+- To run the model, connect a webcam and run `code/run_realtime_pikachu_detection.py`.
 
 
 
