@@ -22,7 +22,7 @@ The main problem when training a detection model, or generally when dealing with
 
 The overall pipeline looks as follows.
 <p align="center" width="100%">
-<img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/4a8b6a39-3ff6-4c6b-8037-76d78f5fee8a" style="width: 100%">
+<img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/8f67802a-7dca-43ff-ace3-fa7102aa9658" style="width: 100%">
 </p>
 
 - Use MagiScan 3D to make the 3D model of Pikachu. This model is in a raw format and needs some cleaning.
@@ -37,7 +37,7 @@ The overall pipeline looks as follows.
 
 <p align="center" width="100%">
   <a href="https://github.com/paulinamoskwa/detect-pikachu/tree/main/tutorial.md">
-    <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/3d75596b-c157-4e46-92c9-aa5dd919f376" style="width: 100%">
+    <img src="https://github.com/paulinamoskwa/detect-pikachu/assets/104844027/732f7213-04fc-4ac6-bbe9-4da3db9a73fd" style="width: 100%">
   </a>
 </p>
 
